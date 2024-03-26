@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./accueil-style/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px)"
+      href="./accueil-style/tablette.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 992px)"
+      href="./accueil-style/desktop.css"
+    />
+    <title>Accueil</title>
+  </head>
+
+  <body>
+    <!---------------------------------------------------------------LOADING SPINNER----------------------------------------------------->
+
+    <div class="ecran">
+      <div class="rond"></div>
+    </div>
+
+    <!--------------------------------------------------------------------- HEADER ------------------------------------------------------------->
+
+    <header class="header">
+      <h1 class="header__txt">ohmyfood</h1>
+    </header>
+
+    <!---------------------------------------------------------------------- MAIN -------------------------------------------------------------->
+
+    <main class="main">
+      <div class="localisation-presentation-fonctionnement">
+        <section class="localisation">
+          <p class="localisation__txt">
+            <i class="fa-solid fa-location-dot"></i>Paris,Belleville
+          </p>
+        </section>
+
+        <!----------------- SECTION PRESENTATION ------------------------------->
+
+        <section class="presentation">
+          <div class="presentation__contain">
+            <h2 class="presentation__contain--reservez">
+              Réservez le menu qui vous convient
+            </h2>
+            <p class="presentation__contain--decouvrez">
+              Découvrez des restaurants d'exception, sélectionnés par nos soins.
+            </p>
+            <div class="presentation__contain--btn">
+              <button class="presentation__contain--btn-normal">
+                Explorer nos restaurants
+              </button>
+              <button class="presentation__contain--btn-hover">
+                Explorer nos restaurants
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!------------- SECTION FONCTIONNEMENT ------------------------------->
+
+        <section class="fonctionnement">
+          <div class="fonctionnement__contain">
+            <div class="fonctionnement__contain--title">
+              <h2>Fonctionnement</h2>
+            </div>
+            <div class="fonctionnement__contain--btn">
+              <div class="fct-btn">
+                <div class="fct-btn__number">
+                  <p>1</p>
+                </div>
+                <div class="fct-btn__txt">
+                  <i class="fa fa-mobile-screen-button"></i>
+                  <p>Choisissez un restaurant</p>
+                </div>
+              </div>
+
+              <div class="fct-btn">
+                <div class="fct-btn__number">
+                  <p>2</p>
+                </div>
+                <div class="fct-btn__txt">
+                  <i class="fa-solid fa-list-ul"></i>
+                  <p>Composez votre menu</p>
+                </div>
+              </div>
+              <div id="fct-btn-3" class="fct-btn">
+                <div class="fct-btn__number">
+                  <p>3</p>
+                </div>
+                <div class="fct-btn__txt">
+                  <i id="i-3" class="fa-sharp fa-solid fa-store"></i>
+                  <p>Dégustez au restaurant</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--fin localisation-presentation-fonctionnement-->
+
+      <!------------------------ SECTION RESTAURANTS -------------------------->
+
+      <section class="restaurants">
+        <div class="restaurants__contain">
+          <div class="restaurants__contain--title">
+            <h2>Restaurants</h2>
+          </div>
+          <div class="restaurants__contain--cards">
+            <div class="restau1-restau2">
+              <a href="./restaurants/palette/palette.html">
+                <div class="restaurants-cards">
+                  <div class="restaurants-cards__img palette">
+                    <div class="nouveau">
+                      <p>Nouveau</p>
+                    </div>
+                  </div>
+                  <div class="restaurants-cards__description">
+                    <div class="restaurants-cards__description--txt">
+                      <h3>La palette du goût</h3>
+                      <h4>Ménilmontant</h4>
+                    </div>
+                    <div class="restaurants-cards__description-coeur">
+                      <div class="restaurants-cards__description-coeur--vide">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="restaurants-cards__description-coeur--plein">
+                        <i class="fa-solid fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="./restaurants/enchantee/enchantee.html">
+                <div class="restaurants-cards">
+                  <div class="restaurants-cards__img note">
+                    <div class="nouveau">
+                      <p>Nouveau</p>
+                    </div>
+                  </div>
+                  <div class="restaurants-cards__description">
+                    <div class="restaurants-cards__description--txt">
+                      <h3>La note enchantée</h3>
+                      <h4>Charonne</h4>
+                    </div>
+                    <div class="restaurants-cards__description-coeur">
+                      <div class="restaurants-cards__description-coeur--vide">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="restaurants-cards__description-coeur--plein">
+                        <i class="fa-solid fa-heart"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!--fin restau1-restau2-->
+
+            <div class="restau3-restau4">
+              <a href="./restaurants/francaise/francaise.html">
+                <div class="restaurants-cards">
+                  <div class="restaurants-cards__img française"></div>
+                  <div class="restaurants-cards__description">
+                    <div class="restaurants-cards__description--txt">
+                      <h3>A la française</h3>
+                      <h4>Cité Rouge</h4>
+                    </div>
+
+                    <div class="restaurants-cards__description-coeur">
+                      <div class="restaurants-cards__description-coeur--vide">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="restaurants-cards__description-coeur--plein">
+                        <i class="fa-solid fa-heart"></i>
+                      </div>
+                    </div>
+                    <!--fin restaurants-cards__description-coeur-->
+                  </div>
+                </div>
+              </a>
+
+              <a href="./restaurants/delice/delice.html">
+                <div class="restaurants-cards">
+                  <div class="restaurants-cards__img delice"></div>
+                  <div class="restaurants-cards__description">
+                    <div class="restaurants-cards__description--txt">
+                      <h3>Le délice des sens</h3>
+                      <h4>Folie-Méricourt</h4>
+                    </div>
+
+                    <div class="restaurants-cards__description-coeur">
+                      <div class="restaurants-cards__description-coeur--vide">
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="restaurants-cards__description-coeur--plein">
+                        <i class="fa-solid fa-heart"></i>
+                      </div>
+                    </div>
+                    <!--fin restaurants-cards__description-coeur-->
+                  </div>
+                  <!--fin restaurants-cards__description-->
+                </div>
+                <!--fin restaurants-cards-->
+              </a>
+            </div>
+            <!--fin restau3-restau4-->
+          </div>
+          <!--fin restaurants__contain--cards-->
+        </div>
+      </section>
+    </main>
+
+    <!----------------------------------------------------------------------------- FOOTER ---------------------------------------------------------->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>ohmyfood</p>
+        <nav class="footer__nav">
+          <ul>
+            <li class="footer__nav--i">
+              <i class="fa fa-utensils"></i>Proposer un restaurant
+            </li>
+            <li class="footer__nav--i">
+              <i class="fa fa-handshake-angle"></i>Devenir partenaire
+            </li>
+            <li>Mentions légales</li>
+            <li><a href="mailto:xavier.fremault@gmail.com">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
